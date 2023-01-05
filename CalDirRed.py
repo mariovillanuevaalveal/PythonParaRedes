@@ -1,4 +1,5 @@
 def get_network_address(ip, subnet_mask):
+    
     ip_octets = ip.split(".")
     mask_octets = subnet_mask.split(".")
     network_address = []
