@@ -1,6 +1,6 @@
 # 
-# Este codigo obtiene la dirección de red a partir de una direccion de host 
-# esta ultima ingresada por teclado
+# Este código obtiene la dirección de red a partir de una direccion de host 
+# esta última ingresada por teclado
 #
 import ipaddress
 
