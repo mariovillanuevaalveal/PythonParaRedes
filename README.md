@@ -12,11 +12,13 @@ Programación en python orientada a redes de datos.
 #Activar el entorno virtual
 
   #Para windows 
+    '''
     micarpeta\Scripts\activate.bat
-   
+    '''
    #Para linux y Mac    
-        source micarpeta\bin\activate
-
+    '''
+    source micarpeta\bin\activate
+    '''
 #Para deactivar el entorno virtual 
     
     deactivate 
