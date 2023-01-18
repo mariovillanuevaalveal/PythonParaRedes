@@ -37,7 +37,7 @@ Configuración de git
     
       $ git diff <file path 1> <file path 2>
 
-Agregar y Remover archivos. 
+AGREGAR ARCHIVOS DEL GIT
 
   Agregar archivos al área de preparación
       
@@ -51,3 +51,14 @@ Agregar y Remover archivos.
       
       $ git add . 
       
+
+ELIMINAR ARCHIVOS DE GIT
+
+      $ git rm <archivo1>
+  
+  Para eliminar archivo del area de preparación sin quitar los archivos del directorio de trabajo 
+  
+      $ git rm --cache <archivo1> ...
+
+
+  
