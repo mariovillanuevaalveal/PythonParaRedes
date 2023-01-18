@@ -1,0 +1,53 @@
+Manual de referencia rápida uso de GIT. 
+
+Configuración de git
+
+  Configuración global de GIT
+      Configuración inicial.
+          
+            $ git config --global user.name "<nombre de usuario>"
+            $ git config -- global user.mail "<mail de usuario>"
+  
+  Crear un repositorio de git:
+  
+      $ git init <Nombre del proyecto>
+
+  Obtener un repositorio ya existente en Git
+      
+      $ git clone <repositorio > [directorio local]
+      
+  Revisar cambios de los archivos del directorio de trabajo.
+  
+      $ git status
+  
+  Comparar cambios entre la versión del archivo del directorio de trabajo y la última configuración. 
+  
+      $ git diff <archvios>
+  
+  Mostrar cambios entre la versión del archivo del directorio de trabajo y una confirmación particular del historial de archivos.
+      
+      $ git diff <commit id> <file path> 
+  
+  Mostrar cambios entre las dos confirmaciones de un historial de archivos <file path> ruta del archivo y <commit id > que es la 
+  identificacion de la version del archivo a comparar. 
+  
+      $ git diff <commit id 1> <commit id 2> <file path>
+  
+  Mostrar los cambios entre dos archivos enel directorio de trabajo o en el disco.
+    
+      $ git diff <file path 1> <file path 2>
+
+Agregar y Remover archivos. 
+
+  Agregar archivos al área de preparación
+      
+      $ git add
+      
+  Para agregar solo un archivo al área de preparación
+  
+      $ git add <archivo>
+  
+  Agregar todos los archivos modificados al area de preparación
+      
+      $ git add . 
+      
