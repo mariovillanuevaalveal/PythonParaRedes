@@ -27,32 +27,42 @@ Programación en python orientada a redes de datos.
 
 MANEJO DE PAQUETES CON PIP
 
-    se puede verificar que no existan paquetes adicionales de python instalados dentro del entoro virtual
-        pip freeze
+se puede verificar que no existan paquetes adicionales de python instalados dentro del entoro virtual
+       
+    pip freeze
     
-    Instalar un paquete dentro del entrono 
-        pip3 install requests
-    Para instalar una version especifica 
-        pip3 install requests==2.6.0 
+Instalar un paquete dentro del entrono 
+
+    pip3 install requests
+Para instalar una version especifica 
     
-    Para actualizar una version 
-        pip3 install --upgrade requests
+    pip3 install requests==2.6.0 
     
-    Para obtener informacion de paquete
-        pip3 show requests
+Para actualizar una version 
+
+    pip3 install --upgrade requests
     
-    Eliminar paquentes del entorno
-        pip -m pip uninstall requests 
+Para obtener informacion de paquete
+
+    pip3 show requests
     
-    revisar si el paque se encuentra nuevamente
-        pip freeze / pip show requests
+Eliminar paquentes del entorno
     
-    Mostrar los paquetes instalados en un entorno virtual.
-        pip list 
+    pip -m pip uninstall requests 
     
-    Guardar en un archivo la lista de paquentes requerido.
-        pip freeze > requirements.txt
+Revisar si el paquete se encuentra nuevamente
+
+    pip freeze / pip show requests
     
-    Instalar todos los paquetes requerido en un proyecto. 
-        pip install -r requirements.txt
+Mostrar los paquetes instalados en un entorno virtual.
+
+    pip list 
+    
+Guardar en un archivo la lista de paquentes requerido.
+
+    pip freeze > requirements.txt
+    
+Instalar todos los paquetes requerido en un proyecto. 
+
+    pip install -r requirements.txt
     
