@@ -1,7 +1,8 @@
 Manual de referencia rápida uso de GIT. 
 
 Configuración de git
-
+ working directory -> XXXX -> git 
+ 
   Configuración global de GIT
       Configuración inicial.
           
@@ -11,7 +12,7 @@ Configuración de git
   Crear un repositorio de git:
   
       $ git init <Nombre del proyecto>
-
+  
   Obtener un repositorio ya existente en Git
       
       $ git clone <repositorio > [directorio local]
@@ -20,6 +21,10 @@ Configuración de git
   
       $ git status
   
+  Mostrar todas las configuraciones del historial de la rama actual 
+      
+      $ git log
+      
   Comparar cambios entre la versión del archivo del directorio de trabajo y la última configuración. 
   
       $ git diff <archvios>
@@ -29,13 +34,18 @@ Configuración de git
       $ git diff <commit id> <file path> 
   
   Mostrar cambios entre las dos confirmaciones de un historial de archivos <file path> ruta del archivo y <commit id > que es la 
-  identificacion de la version del archivo a comparar. 
+ identificacion de la version del archivo a comparar. 
   
       $ git diff <commit id 1> <commit id 2> <file path>
   
   Mostrar los cambios entre dos archivos enel directorio de trabajo o en el disco.
     
       $ git diff <file path 1> <file path 2>
+
+  Descartar cambios en el directorio de trabajo.
+      
+      $git restore <file>
+
 
 AGREGAR ARCHIVOS DEL GIT
 
@@ -51,7 +61,9 @@ AGREGAR ARCHIVOS DEL GIT
       
       $ git add . 
       
-
+  Confirmar el archivo 
+  
+      $ git commit -m "Comentarios del los cambios realizados"
 ELIMINAR ARCHIVOS DE GIT
 
       $ git rm <archivo1>
@@ -60,5 +72,36 @@ ELIMINAR ARCHIVOS DE GIT
   
       $ git rm --cache <archivo1> ...
 
+  
+RAMAS Y FUSIONES
 
+   Crear una nueva rama
+    
+      $ git branch <nombrerama>
+      
+   Verificar la rama actual en uso. 
+    
+      $ git branch
+   
+   Cambiar de rama
+   
+      $ git checkout <nuevarama>
+      
+   Combinar contenido entre rama1 y rama maestra
+   
+      $ git merge <nuevaRama>
+   
+   Eliminar una Rama
+      
+      $ git branch -d <nuevarama>
+   
+   
+   
+ INTEGRACION CON GITHUB
+
+   Agregar URL a Git
+      $ git remote add origin <URL>
+      
+   Verificacion 
+      $ git remote --verbose
   
