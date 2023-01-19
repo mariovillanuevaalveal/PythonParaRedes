@@ -95,7 +95,27 @@ RAMAS Y FUSIONES
       
       $ git branch -d <nuevarama>
    
+   Subir una rama a git
+      
+      $ git push -u <nuevarama>
    
+   Mostrar todas las branch locales y remotas
+   
+      $ git branch -a
+      
+  Unir una rama al master 
+      hay que volver a la branch master (checkout)
+      verificar que tengamos la ultima versiøn $ git pull origin master
+      revisar las ramas (brach) antes unidas.
+          $ git branch --merged 
+      
+      Unir la nueva rama
+       
+          $ git merge <nuevarama>
+          
+      ahora hay que subir a git. (git push origin master) 
+      
+    
    
  INTEGRACION CON GITHUB
 
@@ -104,4 +124,16 @@ RAMAS Y FUSIONES
       
    Verificacion 
       $ git remote --verbose
-  
+   
+   Clonar un repositorio 
+      $ git clone url
+   
+   subir archivos
+      gip push original master
+   
+   ultima version 
+      git pull origin master
+
+
+      
+    
